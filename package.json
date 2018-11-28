@@ -1,0 +1,36 @@
+{
+  "name": "starpaas-node-template",
+  "version": "1.0.0",
+  "description": "this is a node template project",
+  "main": "src/index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 6006 -c ./src/test/storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "konva": "2.5.1",
+    "object-merge": "2.5.1",
+    "prop-types": "15.6.2",
+    "react-dom": "16.6.3",
+    "react-intl": "2.7.2",
+    "s2s-app-service": "4.5.61",
+    "s2s-input": "2.0.1",
+    "s2s-select": "2.0.3",
+    "s2s-svg-icons": "2.3.12",
+    "s2s-themes": "4.0.0",
+    "styled-components": "4.1.1"
+  },
+  "devDependencies": {
+    "react": "16.6.3",
+    "react-konva": "16.6.31",
+    "storybook": "1.0.0",
+    "@storybook/react": "4.0.7",
+    "@storybook/addon-actions": "4.0.7",
+    "@storybook/addon-links": "4.0.7",
+    "@storybook/addons": "4.0.7",
+    "@babel/core": "7.1.6",
+    "babel-loader": "8.0.4"
+  }
+}
