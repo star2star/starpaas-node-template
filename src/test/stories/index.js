@@ -7,8 +7,8 @@ import MyNode from "../../index";
 const data = MyNode.generateNewNode();
 console.log('xxxxx', data);
 
-const TheNode = MyNode.getTabs(data, null, (action, params)=>{
-  console.log('story callback called', action ,params);
+const TheNode = MyNode.getTabs(data, null, (action, params) => {
+  console.log('story callback called', action, params);
 });
 
 
@@ -29,7 +29,8 @@ stories.add('node ', () => (
           (a, b) => {
             console.log('moveaction', a, b);
           },
-          { width: 1000, height: 1000 } 
+          { width: 1000, height: 1000 },
+          true // show errors
         )}
       </Layer>
     </Stage>
@@ -43,7 +44,7 @@ stories.add('right panel Tab 0', () => (
   </div>
 ));
 
-if (TheNode.length > 1){
+if (TheNode.length > 1) {
   stories.add('right panel Tab 1', () => (
     <div style={{ width: '100%', height: '100%', backgroundColor: 'lightgray' }}>
       {TheNode[1].tabFunc()}
