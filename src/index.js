@@ -437,6 +437,23 @@ const isValid = (data, otherNodes) => {
   return { "isValid": bReturn, "messages": msgReturn };
 };
 
+const publish = (flow, nodeData) =>{
+  return new Promise((resolve, reject)=>{
+    const newNodeData = ObjectMerge({}, nodeData);
+
+    resolve(newNodeData);
+  });
+};
+
+const unPublish = (flow, nodeData) =>{
+  return new Promise((resolve, reject)=>{
+    const newNodeData = ObjectMerge({}, nodeData);
+    
+    resolve(newNodeData);
+  });
+};
+
+
 export default {
   "generateSampleData": (/*nodeData, globalData*/) => {
     // start node so i am not doing much ... just return parameters 
@@ -755,6 +772,9 @@ export default {
       "tabFunc": getOutputTab(data, errors, callback)
     }];
   }, 
+  "publish": publish,
+
+  "unPublish": unPublish,
 };
 
 //////////////////////////////////
