@@ -439,17 +439,21 @@ const isValid = (data, otherNodes) => {
 
 const publish = (flow, nodeData) =>{
   return new Promise((resolve, reject)=>{
-    const newNodeData = ObjectMerge({}, nodeData);
-
-    resolve(newNodeData);
+    //custom code here 
+    if ('x' === "y"){
+      reject();
+    }
+    resolve();
   });
 };
 
 const unPublish = (flow, nodeData) =>{
   return new Promise((resolve, reject)=>{
-    const newNodeData = ObjectMerge({}, nodeData);
-    
-    resolve(newNodeData);
+    //custom code here 
+    if ('x' === "y"){
+      reject();
+    }
+    resolve();
   });
 };
 
