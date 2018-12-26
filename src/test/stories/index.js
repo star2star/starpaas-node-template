@@ -7,7 +7,8 @@ import MyNode from "../../index";
 const data = MyNode.generateNewNode();
 console.log('xxxxx', data);
 
-const TheNode = MyNode.getTabs(data, null, (action, params) => {
+const newData = {...data.formData, "definitions": data.definitions}
+const TheNode = MyNode.getTabs(newData, null, (action, params) => {
   console.log('story callback called', action, params);
 });
 

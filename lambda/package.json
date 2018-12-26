@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf package-lock.json && rimraf dist/* && rimraf node_modules && npm install",
+    "test": "node test.js",
+    "prebuild": "rimraf dist && mkdir dist",
+    "build": "zip -r dist/$npm_package_name.zip ./"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.26.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "rimraf": "2.6.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

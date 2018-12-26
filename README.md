@@ -31,6 +31,10 @@ npm run storybook
 
 ## History
 
+#### 12/12/2018 - v1.0.1
+
+* added publish and unpublish methods 
+
 #### 11/28/2018 - v1.0.0
 
 #### 12/26/2018 - v1.0.1
