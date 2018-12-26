@@ -1,6 +1,6 @@
 {
   "name": "starpaas-node-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "this is a node template project",
   "main": "src/index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "react-intl": "2.7.2",
     "s2s-app-service": "4.5.61",
     "s2s-input": "2.0.1",
+    "s2s-node-utilities": "0.0.1",
     "s2s-select": "2.0.3",
     "s2s-svg-icons": "2.3.12",
     "s2s-themes": "4.0.0",

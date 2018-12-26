@@ -33,4 +33,7 @@ npm run storybook
 
 #### 11/28/2018 - v1.0.0
 
+#### 12/26/2018 - v1.0.1
+TA - added dependency s2s-node-utilities
+
 * initial checkin 

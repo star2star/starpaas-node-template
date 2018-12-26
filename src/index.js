@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import * as svgIcons from 's2s-svg-icons';
 import { colorGrid } from 's2s-themes';
 import { Arrow, Rect, Path, Circle, Text, Line, Group, Wedge } from "react-konva";
-import {nodeUtilities} from 's2s-app-service';
+import * as nodeUtilities from 's2s-node-utilities';
 
 const name = "Test";
 const type = "test ";
@@ -16,7 +16,7 @@ const description = "Test description";
 const componentName = "Test";
 const category = "activity";
 
-const MAX_TIMEOUT=300000;
+const MAX_TIMEOUT = 300000;
 
 const nodeInfo = {
   "name": name,
@@ -230,7 +230,7 @@ const renderErrorDetails = (messages, showErrorDetails) => {
   }
 };
 
-const renderErrorArea =  (compValid, svg, node, nodeAction, showErrorDetails) => {
+const renderErrorArea = (compValid, svg, node, nodeAction, showErrorDetails) => {
   if (compValid.isValid === false) {
     return (
       <Group
@@ -754,7 +754,7 @@ export default {
       "tabDisplayName": Utilities.getInstance().getIntlMessage("CONFIRMATION-NODE-TAB-DISPLAY-NAME-OUTPUT", "Connections"),
       "tabFunc": getOutputTab(data, errors, callback)
     }];
-  }, 
+  },
 };
 
 //////////////////////////////////
