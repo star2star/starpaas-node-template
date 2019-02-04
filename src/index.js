@@ -10,6 +10,8 @@ import { colorGrid } from 's2s-themes';
 import { Arrow, Rect, Path, Circle, Text, Line, Group, Wedge } from "react-konva";
 import * as nodeUtilities from 's2s-node-utilities';
 
+const NEEDS_TOKEN = true;
+
 const name = "Test";
 const type = "test ";
 const description = "Test description";
@@ -458,6 +460,11 @@ const unPublish = (flow, nodeData) => {
 };
 
 
+const needsToken = () =>{
+  return NEEDS_TOKEN;
+};
+
+
 export default {
   "generateSampleData": (/*nodeData, globalData*/) => {
     // start node so i am not doing much ... just return parameters 
@@ -466,6 +473,8 @@ export default {
       resolve(returnObject);
     });
   },
+
+  "needsToken": needsToken, 
 
   "defaultFormData": defaultFormData,
 

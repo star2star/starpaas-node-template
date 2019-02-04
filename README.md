@@ -40,4 +40,9 @@ npm run storybook
 #### 12/26/2018 - v1.0.1
 TA - added dependency s2s-node-utilities
 
+#### 02/04/2019 - v1.1.0
+* added needsToken function 
+
+
+
 * initial checkin 
