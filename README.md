@@ -43,6 +43,14 @@ TA - added dependency s2s-node-utilities
 #### 02/04/2019 - v1.1.0
 * added needsToken function 
 
+#### 02/07/2019 - v1.1.1
+* needs_token was added
+* isDisabled for all inputs 
+* internationalization 
+* isPublishedApplication disabling 
+* published and unpublished are optional so commented out ... with comment 
+
+
 
 
 * initial checkin 
